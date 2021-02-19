@@ -2,7 +2,7 @@ from multiprocessing import Process, JoinableQueue
 import sys
 from glob import glob
 from os import path
-from run import main
+from src.run import main
 import json
 
 agent_configs = sys.argv[1]

@@ -1,13 +1,13 @@
-from policy_gradients.agent import Trainer
+from src.policy_gradients.agent import Trainer
 import git
 import numpy as np
 import os
 import argparse
-from policy_gradients import models
+from src.policy_gradients import models
 import sys
 import json
 import torch
-from cox.store import Store, schema_from_dict
+from src.cox.cox.store import Store, schema_from_dict
 
 
 # Tee object allows for logging to both stdout and to file

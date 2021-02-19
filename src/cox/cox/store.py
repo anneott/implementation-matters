@@ -396,7 +396,7 @@ class Table():
             nrows = 0
 
         df.index += nrows
-        self._HDFStore.append(self._name, df, table=True)
+        self._HDFStore.append(self._name, df) #, table=True)
 
         if not self._has_initialized:
              self._initialize_nonempty_table()
